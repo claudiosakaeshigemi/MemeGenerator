@@ -16,7 +16,7 @@ function fetchMemesJson () {
 }
 
 
-export function fetchmemes() {
+export function fetchMemes() {
     return function(dispatch) {
         return fetchMemesJson()
             .then(json => dispatch(receiveMemes(json)))
