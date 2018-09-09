@@ -1,4 +1,4 @@
-export const RECEIVE_MEMES = 'RECEIVE_MEMS';
+export const RECEIVE_MEMES = 'RECEIVE_MEMES';
 
 
 function receiveMemes(json){
@@ -16,7 +16,7 @@ function fetchMemesJson () {
 }
 
 
-export function fettchmemes() {
+export function fetchmemes() {
     return function(dispatch) {
         return fetchMemesJson()
             .then(json => dispatch(receiveMemes(json)))
