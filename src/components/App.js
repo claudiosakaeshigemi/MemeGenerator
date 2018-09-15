@@ -48,6 +48,8 @@ class App extends Component {
                     <MemeItem 
                         key={index} 
                         meme={meme}
+                        text0 = { this.state.text0}
+                        text1 = { this.state.text1}
                     />
                 )
             })
